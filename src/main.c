@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "iuint/iuint.h"
 
 int main() {
-  printf("great success!\n");
+  printf("dumb value: %d\n", dumbIuint.value);
   return 0;
 }

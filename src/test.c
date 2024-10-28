@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "iuint/iuint_test.h"
 
 int main() {
-  printf("test runned successfully\n");
+  iuintTests();
   return 0;
 }
