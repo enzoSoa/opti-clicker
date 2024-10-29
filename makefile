@@ -2,7 +2,7 @@ CC = gcc
 BUILD_DIR = build
 
 EXEC = oec
-SRC = $(shell find . -name '*.c' ! -name '*test.c')
+SRC = $(shell find . -name '*.c' ! -name '*test.c' ! -path '*/testing/*' -name '*.h')
 OBJ = $(patsubst ./src/%.c, ./build/%.o, $(SRC))
 
 TEST_EXEC = test
